@@ -1,0 +1,165 @@
+<html>
+    <head>
+        <title>twitch.tv</title>
+<style>
+body{
+background: radial-gradient(#e199fc 25%,#d168f9 45%, #c32bff 75%, #cd55fc 95%);
+}
+/*div{*/
+/*    background-color: #53ddef;*/
+/*}*/
+/*div a{*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*    font-size: 20px;*/
+/*    padding: 15px;*/
+/*    display:inline-block;*/
+/*}*/
+/*ul{*/
+/*  display: inline;*/
+/*  margin: 0px;*/
+/*  padding: 0px;*/
+/*}*/
+/*ul li{*/
+/*    display: inline-block;*/
+/*}*/
+/*ul li:hover{*/
+/*    background: #8eedf9;*/
+    
+/*}*/
+/*ul li:hover ul {*/
+/*    display: block;*/
+/*}*/
+/*ul li ul {*/
+/*  position: absolute;*/
+/*  float: left;*/
+/*  width: 160px;*/
+/*  display: none;*/
+/*}*/
+/*ul li ul li { */
+/*  background: #8eedf9; */
+/*  display: block; */
+  
+/*}*/
+/*Orginal position*/
+    #twitch {
+        opacity:0.4;
+        filter: drop-shadow(10px 10px 15px rgba(40,40,200,.8));
+        /*position:absolute;*/
+        transition: transform 6s;
+    }
+    #twitch:active:hover{
+        /* Lets the image take priority and covers the others*/
+        z-index: +1;
+        /*Will only expand in size once, when clicked*/
+        transform: scale(1.5,1.5) translate(0px,200px);
+        animation: twitchframe;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    #unknown:hover{
+        animation: twitchflip;
+        animation-duration: 4s;
+        animation-timing-function:ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes twitchflip{
+        50% {transform:rotateY(180deg);}
+        100% {transform:rotateY(360deg);opacity:1;}
+    }
+    /*As the animation gooes it it repeats forver due to ilteration-count, and will change color, while changing opacity*/
+    @keyframes twitchframe{
+        0%{opacity: 0.4;}
+        25%{filter: drop-shadow(10px 10px 15px rgba(200,100,20,.8));}
+        50%{opacity: 0.9;filter: drop-shadow(10px 10px 15px rgba(0,200,200,.8));}
+        75%{filter: drop-shadow(10px 10px 15px rgba(0,200,200,.8));}
+        100%{opacity: 0.4;}
+    }
+    #unknown{
+        box-shadow: 5px 7px ;
+        opacity:0.6;
+    }
+    /* All different games on streamed on the twitch platform*/
+    #csgo{
+    }
+    #dota{
+
+    }
+    #fortnite{
+
+    }
+    #gta{
+
+    }
+    #hearthstone{
+
+    }
+    #lol{
+
+    }
+    #overwatch{
+
+    }
+    #pubg{
+
+    }
+    #rocket{
+
+    }
+    #smite{
+
+    }
+    #wow{
+
+    }
+    a{
+        /*No line under the links*/
+        text-decoration: none;
+        transition:  6s;
+
+    }
+    
+</style>
+    </head>
+    <body bgcolor="white">
+        <center>
+        <img id="twitch" src="twitch.png">
+        <div id="pic"></div><br>
+        <img id="unknown" class="active" src="unknown.jpg"><br>
+        <a href="https://fontmeme.com/temporary/a0e37094d
+        0db98c012208152a51d933f.png"> <br><br>Logo Image from Font meme</a><br>
+       <!--<a href="https://www.twitch.tv/"></a>-->
+        
+        <!--<div>-->
+        <!--    <ul>-->
+        <!--        <li><a href="#">Games</a>-->
+        <!--            <ul>-->
+        <!--                <li><a href="#pic">ARK Survival Evolved</a></li>-->
+        <!--                <li><a href="#pic">Black Desert Online(BDO)</a></li>-->
+        <!--                <li><a href="#pic">Counter Strike Global Offensive(CS GO)</a></li>-->
+        <!--                <li><a href="#pic">Dark Souls III</a></li>-->
+        <!--                <li><a href="#pic">Defense of the Acients 2(Dota 2)</a></li>-->
+        <!--                <li><a href="#pic">Elder Scrolls: Legends</a></li>-->
+        <!--                <li><a href="#pic">Elder Scrolls Online</a></li>-->
+        <!--                <li><a href="#pic">Elder Scrolls V: Skyrim</a></li>-->
+        <!--                <li><a href="#pic">Federation Internationale de Football Association(FIFA 18)</a></li>-->
+        <!--                <li><a href="#pic">Fortnite</a></li>-->
+        <!--                <li><a href="#pic">Garry's mod</a></li>-->
+        <!--                <li><a href="#pic">Grand Theft Auto V(GTA V)</a></li>-->
+        <!--                <li><a href="#pic">Hearthstone</a></li>-->
+        <!--                <li><a href="#pic">Leauge of Losers</a></li>-->
+        <!--                <li><a href="#pic">Minecraft</a></li>-->
+        <!--                <li><a href="#pic">Overwatch</a></li>-->
+        <!--                <li><a href="#pic">Playerunknown's Battlegrounds(PUBG)</a></li>-->
+        <!--                <li><a href="#pic">Rocket Leauge</a></li>-->
+        <!--                <li><a href="#pic">Runescape</a></li>-->
+        <!--                <li><a href="#pic">Smite</a></li>-->
+        <!--                <li><a href="#pic">World of Warcraft(WOW)></a></li>-->
+
+        <!--            </ul>-->
+        <!--        </li>-->
+        <!--    </ul>-->
+        <!--</div>-->
+
+    </body>
+</html>
